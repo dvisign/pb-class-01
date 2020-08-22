@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      #wrapper {
+        width:1000px;
+        height:1000px;
+      }
+      .yellowBg {
+        background:yellow;
+      }
+      .blueBg {
+        background:blue;
+      }
+      .greenBg {
+        background:green;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .boxLines::after {
+        clear:both;
+        display: block;
+        content:"";
+      }
+      .boxLines > .box {
+        float:left;
+      }
+      .sort5 > div {
+        margin-left:100px;
+      }
+      .sort5 > div:first-child {
+        margin-left: 0;
+      }
+      .sort3 > div {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper" class="yellowBg">
+      <div class="boxLines sort5">
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+      </div>
+      <div class="boxLines sort3">
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+      </div>
+      <div class="boxLines sort5">
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+      </div>
+      <div class="boxLines sort3">
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+      </div>
+      <div class="boxLines sort5">
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+        <div class="box greenBg"></div>
+        <div class="box blueBg"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>position</title>
+    <style>
+      #wrapper {
+        width: 600px;
+        height: 600px;
+        background:yellow;
+        position:relative;
+      }
+      .abs {
+        position:absolute;
+        background:red;
+        width:200px;
+        height:200px;
+        color:#fff;
+      }
+      .abs:first-child {
+        left:0;
+        top:0;
+      }
+      .abs:nth-child(2) {
+        right:0;
+        top:0;
+      }
+      .abs:nth-child(3) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .abs:nth-child(4) {
+        left: 0;
+        bottom:0;
+      }
+      .abs:nth-child(5) {
+        right: 0;
+        bottom:0;
+      }
+      /* relative : 하위 자식들중에서 absolute를 가진 자식의 기준점 */
+      /* absolute : 상위 부모들중에서 relative를 가진 부모들에게 상속 */
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // $(document).ready(function() {
+      //   function position(initId) {
+      //     var absEl = $(initId);
+      //     var parentEl = absEl.parents();
+      //     var targetX = parentEl.width() / 2;
+      //     var targetY = parentEl.height() / 2;
+      //     var centerMoveX = absEl.width() / 2;
+      //     var centerMoveY = absEl.height() / 2;
+      //     absEl.css({
+      //       "top":(targetX - centerMoveX) + "px",
+      //       "left":(targetY - centerMoveY) + "px"
+      //     });
+      //   }
+      //   position(".abs:nth-child(3)");
+      // })
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="wrapper">
+        <div class="abs">1번</div>
+        <div class="abs">2번</div>
+        <div class="abs">3번</div>
+        <div class="abs">4번</div>
+        <div class="abs">5번</div>
+      </div>
+    </div>
+    <div id="ssr">
+      서버사이드 렌더링입니다.
+    </div>
+    <div id="csr">
+
+    </div>
+    <script>
+      (function(){
+        $.ajax({
+          url : "http://127.0.0.1:5500/test.json",
+          success : function(res) {
+            var data = res.result;
+            document.getElementById("csr").innerHTML = data;
+          }
+        })
+      })(); 
+    </script>
+  </body>
+</html>

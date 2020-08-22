@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 반응형 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="nav_wrapper">
+      <nav id="navs" class="clear">
+        <div id="logos">
+          <h1>SOME NAME</h1>
+        </div>
+        <ul id="nav_list">
+          <li class="navItems">
+            <a href="">PORTFOLIO</a>
+          </li>
+          <li class="navItems">
+            <a href="">ABOUT ME</a>
+          </li>
+          <li class="navItems">
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+        <div id="m_nav_btn">
+          <button>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+      <div id="m_side_nav">
+        <ul id="m_nav_list">
+          <li id="m_side_close_btn" class="mNavItems">
+            <a>Close</a>
+          </li>
+          <li class="mNavItems">
+            <a href="">PORTFOLIO</a>
+          </li>
+          <li class="mNavItems">
+            <a href="">ABOUT ME</a>
+          </li>
+          <li class="mNavItems">
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="m_side_bg"></div>
+    </header>
+    <div id="body_contents">
+      <section id="section01">
+        <div class="containers">
+          <ul id="img_list" class="clear">
+            <li>
+              <img src="/img/section01_01.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_02.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_03.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_04.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_05.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_06.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_07.jpg">
+            </li>
+            <li>
+              <img src="/img/section01_08.jpg">
+            </li>
+          </ul>
+          <div id="pager_wrapper">
+            <div>
+              <button>&#60;</button>
+              <ul id="pager_list">
+                <li>
+                  <button class="active">1</button>
+                </li>
+                <li>
+                  <button>2</button>
+                </li>
+                <li>
+                  <button>3</button>
+                </li>
+                <li>
+                  <button>4</button>
+                </li>
+              </ul>
+              <button>&#62;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section02">
+        <div class="containers">
+          <div class="w600">
+            <div class="section_header">
+              <h2>About Me</h2>
+            </div>
+            <div class="section_body">
+              <div class="section02Conts" id="section02_img">
+                <img src="/img/section02_contents.jpg">
+              </div>
+              <div class="section02Conts" id="section02_profile">
+                <h3>My Name</h3>
+                <p>저의 가까운 현실적인 목표와 진행중인 프로젝트는 첫번째로 제가 만들 컨텐츠의 UI와 UX가 원하는 정보를 빠르고 간단하게 제공 할 수 있도록 제작하는 것입니다. 두번째는 javascript로 무겁지 않게, 가볍고 민첩하게 반응할 수 있도록 제작하는것입니다. 세번째는 리액트와 더불어서 카페24 및 닷홈,  후이즈에서 많이 사용하는 아파치 + php + react + mysql 을 연동해서 그누보드 DB와 로직을 기반으로 개발중에 있습니다.</p>
+                <p>mail : jmch0922@gmail.com</p>
+                <p>tell : 5353 35531</p>
+              </div>
+              <div class="section02Conts" id="section02_skill">
+                <h3>Technical Skills</h3>
+                <ul>
+                  <li class="skillItems">
+                    <h4>Photography</h4>
+                    <!-- 퍼센테이지:100% relaitve -->
+                    <div class="grpWrapper">
+                      <!-- 퍼센테이지 수치 absolute -->
+                      <div class="grpPer">
+                        <!-- 퍼센테이지 수치의 100% relative -->
+                        <div class="grpPerTxtWrapper">
+                          <!-- 퍼센테이지 텍스트 수치의 한중간에 absolute -->
+                          <p>95%</p>
+                        </div>
+                      </div>  
+                    </div>
+                  </li>
+                  <li class="skillItems">
+                    <h4>Web Design</h4>
+                    <!-- 퍼센테이지:100% relaitve -->
+                    <div class="grpWrapper">
+                      <!-- 퍼센테이지 수치 absolute -->
+                      <div class="grpPer">
+                        <!-- 퍼센테이지 수치의 100% relative -->
+                        <div class="grpPerTxtWrapper">
+                          <!-- 퍼센테이지 텍스트 수치의 한중간에 absolute -->
+                          <p>85%</p>
+                        </div>
+                      </div>  
+                    </div>
+                  </li>
+                  <li class="skillItems">
+                    <h4>Photoshop</h4>
+                    <div id="order_grp" class="clear">
+                      <div>
+                        <p>80&#37;</p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </li>
+                </ul>
+                <div id="skill_btn">
+                  <button>Download Resume</button>
+                </div>
+              </div>
+              <div class="section02Conts" id="section02_price">
+                <h3>How much I charge</h3>
+                <ul id="section02_price_conts" class="clear">
+                  <li>
+                    <h4>Basic</h4>
+                    <ul class="productOptions">
+                      <li>
+                        <p>Web Design</p>
+                      </li>
+                      <li>
+                        <p>Photography</p>
+                      </li>
+                      <li>
+                        <p>5GB Storage</p>
+                      </li>
+                      <li>
+                        <p>Mail Support</p>
+                      </li>
+                    </ul>
+                    <div class="productPrice">
+                      <p>&#36;&nbsp;10</p>
+                      <p>per month</p>
+                    </div>
+                    <div class="productBtn">
+                      <button>Sign Up</button>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Pro</h4>
+                    <ul class="productOptions">
+                      <li>
+                        <p>Web Design</p>
+                      </li>
+                      <li>
+                        <p>Photography</p>
+                      </li>
+                      <li>
+                        <p>50GB Storage</p>
+                      </li>
+                      <li>
+                        <p>Endless Support</p>
+                      </li>
+                    </ul>
+                    <div class="productPrice">
+                      <p>&#36;&nbsp;25</p>
+                      <p>per month</p>
+                    </div>
+                    <div class="productBtn">
+                      <button>Sign Up</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section03">
+        <div class="containers">
+          <div class="w600">
+            <div class="section_header">
+              <h2>Contact Me</h2>
+            </div>
+            <div id="section03_conts">
+              <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+              <!-- action = 데이터를 보낼페이지 -->
+              <!-- method = 데이터타입 -->
+              <!-- onsumbit = 폼데이터를 넘길때 인증해하는 자바스크립트 -->
+              <form action="" method="POST" onsubmit="">
+                <div class="formInput">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="이름을 작성해주세요.">
+                </div>
+                <div class="formInput">
+                  <label for="email">Email</label>
+                  <input id="email" type="text" placeholder="이메일을 작성해주세요.">
+                </div>
+                <!-- <div class="formInput">
+                  <label for="password">Password</label>
+                  <input id="password" type="password" placeholder="패스워드를 입력해주세요.">
+                </div>
+                <div class="formInput">
+                  <label for="info">개인정보 수집에 동의하십니까?</label>
+                  <input id="info" type="checkbox">
+                </div>
+                <div class="formInput">
+                  <label for="man">남</label>
+                  <input type="radio" name="wm" id="man">
+                  <label for="woman">여</label>
+                  <input type="radio" name="wm" id="woman">
+                </div>
+                <div class="formInput">
+                  <label for="select">제품</label>
+                  <select id="select">
+                    <option>Basic</option>
+                    <option>Pro</option>
+                  </select>
+                </div> -->
+                <div class="formInput">
+                  <!-- readonly : 수정불가 -->
+                  <!-- disabled : 비활성화 -->
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="내용을 작성해주세요."></textarea>
+                </div>
+                <div class="formInput">
+                  <button>Send massage</button>
+                  <!-- 
+                  <button type="submit">Send massage</button> 
+                  -->
+                  <button type="button">초기화</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footers">
+      <div class="containers">
+        <div id="footer_info" class="clear">
+          <div class="footerInfoItems">
+            <h3>INFO</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum.<br class="wBr1600"> Sed vitae justo condimentum,<br class="wBr1920"> porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          </div>
+          <div class="footerInfoItems">
+            <h3>BLOG POSTS</h3>
+            <ul id="blog_list" class="clear">
+              <li class="blogItems">
+                <a class="clear" href="#">
+                  <div>
+                    <img src="/img/footer_img_01.jpg">
+                  </div>
+                  <div>
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogItems">
+                <a class="clear" href="#">
+                  <div>
+                    <img src="/img/footer_img_02.jpg">
+                  </div>
+                  <div>
+                    <p>Ipsum</p>
+                    <p>Praes tinci sed</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerInfoItems">
+            <h3>POPURAL TAG</h3>
+            <div id="tag_list">
+              <span class="active">Travel</span>
+              <span>New York</span>
+              <span>London</span>
+            </div>
+          </div>
+        </div>
+        <div id="footer_copy">
+          <p>Powered by <a href="https://www.w3schools.com" target="_blank" rel="noopener noreperer">w3.css</a></p>
+        </div>
+      </div>
+    </footer>
+    <div id="modals">
+      <div class="containers">
+        <img src="">
+      </div>
+    </div>
+  </div>
+  <script>
+    // 1.웹페이지가 준비가 되면
+    $(document).ready(function() {
+      // 2. 여기있는 함수들을 실행해
+      // document.getElementById('m_nav_btn').child('button')
+      
+      // 사이드 내비게이션 여는이벤트 
+      // 선택대상한테 on(이벤트가 실행되면, 이함수를 실행해)
+      $("#m_nav_btn > button").on("click", function() {
+        //선택대상을 fadein animation효과를 0.3초 입혀주고,
+        $("#m_side_bg").stop().fadeIn("300" , function(){
+          // 위 함수가 끝나면 다음 함수 실행(콜백)
+          $("#m_side_nav").stop().animate({
+            "right":"0"
+          }, 300)
+        })
+      });
+      // 사이드 내비게이션 닫는 이벤트
+      $("#m_side_close_btn > a, #m_side_bg").on("click", function() {
+        $("#m_side_nav").stop().animate({
+          "right":"-100%"
+        },300, function() {
+          $("#m_side_bg").stop().fadeOut("300")
+        })
+      });
+
+      // 이미지 확대 모달 열기
+      $("#img_list > li").on("click", function() {
+        // 자기 자신을 $this라는 변수로 명명
+        var $this = $(this);
+        // $this의안에 있는 img의 attr src값을 저장
+        var thisSrc = $("img",$this).attr("src");
+        // 모달안에 있는 이미지에 src값을 $this에서 가져온 이미지 주소를 삽입
+        $("#modals img").attr("src", thisSrc);
+        $("#modals").stop().fadeIn(300);
+      });
+      // 이미지 확대 모달 닫기
+      $("#modals").on("click", function() {
+        // 현재 나의 css display상태체크
+        var status = $(this).css("display");
+        // 내가 현재 열려있다면
+        if (status == "block") {
+          // 모달 닫는 함수
+          $(this).stop().fadeOut(300, function() {
+            $("img",$(this)).attr("src", "");
+          })
+        } else { // 내가 닫혀있다면
+          return false;
+        }
+      })
+    });
+  </script>
+</body>
+</html>

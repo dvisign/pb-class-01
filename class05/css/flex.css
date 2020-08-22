@@ -1,0 +1,137 @@
+.blackBg {
+  background:black;
+}
+.blueBg {
+  background:blue;
+}
+.greenBg {
+  background:green;
+}
+.redBg {
+  background:red;
+}
+.box {
+  width:200px;
+}
+.container {
+  display:flex;
+  color:#fff;
+  border:1px dotted #000;
+  padding:20px;
+  margin-bottom:10px;
+}
+.container-inline {
+  display:inline-flex;
+  color:#fff;
+  border:1px dotted #000;
+  padding:20px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.direction-row {
+  /* row 기본값 */
+  flex-direction:row;
+}
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+.direction-column {
+  flex-direction:column;
+}
+.direction-column-reverse {
+  flex-direction:column-reverse;
+}
+/* flex-wrap */
+.flex-container {
+  display:flex;
+  margin-bottom:20px;
+  border:1px dotted #000;
+  color:#fff;
+}
+.wrapBox {
+  padding:10px 200px;
+}
+.flex-wrap {
+  /* 기본옵션 */
+  /* 줄넘김x 스크롤o (적응형) */
+  flex-wrap : nowrap;
+}
+.flex-wrap-on {
+  /* 줄넘김o(반응형) */
+  flex-wrap:wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap:wrap-reverse;
+}
+
+/* flex-direction & flex-wrap */
+/* 
+.flow {
+  flex-flow : row wrap
+  =
+  flex-direction:row
+  flex-wrap:wrap
+}
+*/
+
+/* justify-content */
+.justify-start {
+  /* 기본값 */
+  justify-content : flex-start;
+  padding:0 !important;
+}
+.justify-end {
+  justify-content : flex-end;
+  padding:0 !important;
+}
+.justify-center {
+  justify-content:center;
+  padding:0 !important;
+}
+.justify-between {
+  justify-content : space-between;
+  padding:0 !important;
+}
+.justify-around {
+  justify-content:space-around;
+  padding:0 !important;
+}
+.justify-evenly {
+  justify-content : space-evenly;
+  padding:0 !important;
+}
+/* align-items */
+.alignBox {
+  width:200px;
+  height:100px;
+}
+.align-screth {
+  /* 안에 담긴 items들이 컨테이너의 높이값을 가짐 */
+  align-items : stretch;
+  height:300px;
+}
+.align-start {
+  align-items : flex-start;
+  height:300px;
+}
+.align-end {
+  align-items:flex-end;
+  height:300px;
+}
+.align-center {
+  align-items : center;
+  height:300px;
+}
+.align-base {
+  align-items:baseline;
+  height:300px;
+}
+
+
+.float {
+  margin-top:20px;
+}
+.float > div {
+  float:left;
+  color:#fff;
+}
